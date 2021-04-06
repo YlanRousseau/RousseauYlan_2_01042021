@@ -1,0 +1,116 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+header.header{  
+    display: flex;
+    align-items: center;
+    margin: auto;
+    max-width: 1440px;
+}
+nav.headernav{
+    display: flex; 
+    padding-left: 61%; 
+}
+img.headerimg{
+padding-left: 2em;
+padding-top: 0.5em;
+height: 3em;
+}
+a.nav1{
+    padding: 1.9em;
+    color: #0065FC;
+    font-weight: 500;
+    text-decoration: none;
+    border-top: 3px solid #0065FC;
+
+}
+a.nav2{
+    padding: 1.9em ;
+    color:black;
+    font-weight: 500;
+    text-decoration: none;
+    transition-duration: 0.1s;
+    border-top: 3px transparent #0065FC; 
+}
+
+a.nav3{
+    padding: 1.9em;
+    color: #0065FC;
+    font-weight: 500;
+    text-decoration: none;
+    font-weight:bolder;
+}
+
+
+
+ main{
+     max-width: 1440px;
+     margin: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+section{
+    display: block;    
+}
+h1.titrerecherche{
+    display: block;
+    font-size: 2em;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+p{
+    display: block;
+    margin: 0%;
+    font-weight: lighter;    
+}
+form.searchform{
+    display: inline-flex;
+    max-width: 100%;
+    overflow: auto;
+   
+}
+span.searchspanicon{
+    background-color: #F2F2F2;
+    padding: 1rem 1.25em;
+    border-radius: 1rem 0 0 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    height: 1.2rem;
+}
+input.inputsearch{
+   padding-left:  1.7em;
+    margin-top: 1rem;
+    text-align: left;
+    border-radius: 3px ;
+    height: 3.2rem;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    border-left: #F2F2F2 1px solid;
+    border-right: white 1px solid;
+    font-family: "Raleway";
+    font-weight: bold;
+    font-size: 0.8rem;
+    
+}
+button.Searchbutton{
+    padding-right: 2rem;
+    height: 3.2rem;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    background-color: #0065FC;
+    border-radius: 0rem 1rem 1rem 0rem;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    border-left: #F2F2F2 1px solid;
+    border-right: #F2F2F2 1px solid;
+    font-weight: bold;
+    font-family: "Raleway";
+    color: #F2F2F2;
+    cursor: pointer;
+}
+span.spantext{
+    padding-left: 1.2rem;
+    font-size: medium;
+    color: white;
+}
