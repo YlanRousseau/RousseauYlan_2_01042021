@@ -3,7 +3,7 @@ body{
     margin: 0;
 }
 
-/*TETE DE PAGE */
+                                /*NAV HEADER */
 
 header.header{  
     display: grid;
@@ -62,6 +62,7 @@ box-sizing: border-box;
     display: block;    
 }
 
+                        /*SECTION RECHERCHE*/
 
 /*TITRE DE PAGE*/
 
@@ -130,9 +131,9 @@ box-sizing: border-box;
 
 /*Filtre de recherche */
 
-div.SearchFiltrestitre{
+div.SearchFiltres{
 display: flex;
-margin-top: 2rem;
+margin-top: 0.75rem;
 height: auto;
 width: auto;
   
@@ -142,7 +143,7 @@ width: auto;
     margin: 1rem 2rem 2rem 0rem;
     padding-top: 1.5rem;
 }
-       
+       /*ECONOMIQUE*/
 
             div.filtreco{
             display: flex;
@@ -156,15 +157,56 @@ width: auto;
             transition-duration: 0.1s;
             height: 3rem;
     
-    } 
-    div.filtreco:hover{
-        -webkit-transform: scale(1.05);
-        -ms-transform: scale(1.05);
-        transform: scale(1.05);
-    }
-          
-    
-    div.filtreicon1{
+} 
+                div.filtreco:hover{
+                -webkit-transform: scale(1.01);
+                -ms-transform: scale(1.01);
+                transform: scale(1.01);
+}
+
+                    div.filtreicon1{
+                    display: flex;
+                    margin-right: 0.5rem;
+                    margin-top: 0.2rem;
+                    border-radius: 100% ; 
+                    background-color: #c5dcff;
+                    border: rgb(255, 255, 255) 1px solid;
+                    height: 3.5rem;
+                    width: 3.5rem;    
+}
+                        i.fa-money-bill-wave{
+                        display: flex;
+                        align-items: center;
+                        margin-left: 1rem;
+                        padding-right: 1rem;
+                        color: blue;   
+}
+                            span.spaneco{
+                            display: flex;
+                            padding-right: 1rem;
+                            padding-left: 0.5rem;
+                            font-weight: bold;    
+}
+/*FAMILIAL*/
+
+div.filtrefamilles{
+display: flex;
+align-items: center;
+margin-left: 1.5rem;
+margin-top: 1.75rem;
+border: 2px solid #d9d9d9;
+border-left: none;
+border-radius: 3rem; 
+cursor: pointer;
+transition-duration: 0.1s;
+height: 3rem;
+}
+    div.filtrefamilles:hover{
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    transform: scale(1.01);
+}
+        div.filtreicon2{
         display: flex;
         margin-right: 0.5rem;
         margin-top: 0.2rem;
@@ -173,21 +215,130 @@ width: auto;
         border: rgb(255, 255, 255) 1px solid;
         height: 3.5rem;
         width: 3.5rem;
-       
-           
-    }
-        i.fa-money-bill-wave{
-        display: flex;
-        align-items: center;
-        margin-left: 1rem;
-        padding-right: 1rem;
-        color: blue;
-        
-      
+}    
+            i.fa-child{
+            display: flex;
+            align-items: center;
+            margin-left: 1.3rem;
+            padding-right: 1rem;
+            color: blue; 
 }
-                span.spaneco{
+                span.spanfamilles{
                 display: flex;
                 padding-right: 1rem;
                 padding-left: 0.5rem;
                 font-weight: bold;    
+}  
+
+/*ROMANTIQUE*/
+
+    div.filtreromantique{
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+    margin-top: 1.75rem;
+    border: 2px solid #d9d9d9;
+    border-left: none;
+    border-radius: 3rem; 
+    cursor: pointer;
+    transition-duration: 0.1s;
+    height: 3rem;
+    }
+        div.filtreromantique:hover{
+        -webkit-transform: scale(1.01);
+        -ms-transform: scale(1.01);
+        transform: scale(1.01);
+    }
+            div.filtreicon3{
+            display: flex;
+            margin-right: 0.5rem;
+            margin-top: 0.2rem;
+            border-radius: 100% ; 
+            background-color: #c5dcff;
+            border: rgb(255, 255, 255) 1px solid;
+            height: 3.5rem;
+            width: 3.5rem;
+    }    
+                i.fa-heart{
+                display: flex;
+                align-items: center;
+                margin-left: 1.3rem;
+                padding-right: 1rem;
+                color: blue; 
+    }
+                    span.spanromantique{
+                    display: flex;
+                    padding-right: 1rem;
+                    padding-left: 0.5rem;
+                    font-weight: bold;    
+    }  
+/*Animeaux*/
+div.filtreanimaux{
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+    margin-top: 1.75rem;
+    border: 2px solid #d9d9d9;
+    border-left: none;
+    border-radius: 3rem; 
+    cursor: pointer;
+    transition-duration: 0.1s;
+    height: 3rem;
+    }
+        div.filtreanimaux:hover{
+        -webkit-transform: scale(1.01);
+        -ms-transform: scale(1.01);
+        transform: scale(1.01);
+    }
+            div.filtreicon4{
+            display: flex;
+            margin-right: 0.5rem;
+            margin-top: 0.2rem;
+            border-radius: 100% ; 
+            background-color: #c5dcff;
+            border: rgb(255, 255, 255) 1px solid;
+            height: 3.5rem;
+            width: 3.5rem;
+    }    
+                i.fa-dog{
+                display: flex;
+                align-items: center;
+                margin-left: 1.3rem;
+                padding-right: 1rem;
+                color: blue; 
+    }
+                    span.spananimaux{
+                    display: flex;
+                    padding-right: 1rem;
+                    padding-left: 0.5rem;
+                    font-weight: bold;    
+    }  
+/*Infos Resultat*/
+div.infos{
+    display: flex;
+    align-items: center;
+    height: 3rem;
 }
+div.infoicon{
+    display: flex;
+    margin-right: 0.75rem;
+    border-radius: 100%;
+    border: 1px solid #d9d9d9;
+    height: 1.8rem;
+}
+i.fa-info{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    padding-right: 1rem;
+    color: #0065FC;
+}
+     
+
+
+
+                    /*SECTION HEBERGEMENT*/
+
+    
+    
+    
