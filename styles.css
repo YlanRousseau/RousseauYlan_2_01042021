@@ -345,9 +345,8 @@ grid-template-columns:6fr 3fr;
            
 }
     header.headermarseille{
-    display: grid;
-    grid-column: 1 /-1;
-
+display: grid;
+grid-column: 1/-1;
 } 
         div.divhebergement{
         display: grid;
@@ -360,29 +359,33 @@ grid-template-columns:6fr 3fr;
         border: 2px white solid;
         background-color: #F2F2F2;
 }
-a.ah1{
-    text-decoration: none;
-    color: black;
-}
-    div.article1{
+div.article1{
     background-color: white;
-    padding: 0;
+    padding: 0.4rem;
+    max-height: 100%;
+    width: 16rem;
     border-radius: 1rem;
-    box-shadow: 0 0 20px #0000002e ;
     cursor: pointer;
-    margin: 1rem;
+    box-shadow: 0 0 14px #0000002e ;
+    
+    
 }
 
-        img.imgh1{
-        border-radius: 1rem 1rem 0 0;
-        height: 7rem;
-        
+            img.imgh1{
+            border-radius: 1rem 1rem 0 0;
+            max-width: 100%;
+            height: 10rem;
+                    
+}
+p.pfig{
+    padding-bottom: 0.4rem;
 }
     div.article2{
     background-color: white;
+    padding: 0.4rem;
     border-radius: 1rem;
     cursor: pointer;
-    box-shadow: 0 0 20px #0000002e ;  
+    box-shadow: 0 0 14px #0000002e ;  
 }
         img.imgh2{
         border-radius: 1rem 1rem 0 0;
@@ -390,9 +393,11 @@ a.ah1{
 }
     div.article3{
     background-color: white;
+    padding: 0rem;
+    margin: 1rem;
     border-radius: 1rem;
     cursor: pointer;
-    box-shadow: 0 0 20px #0000002e ;
+    box-shadow: 0 0 14px #0000002e ;
 }
         img.imgh3{
         border-radius: 1rem 1rem 0 0;
@@ -400,9 +405,11 @@ a.ah1{
 }
     div.article4{
     background-color: white;
+    padding: 0;
+    margin: 1rem;
     border-radius: 1rem;
     cursor: pointer;
-    box-shadow: 0 0 20px #0000002e ;
+    box-shadow: 0 0 14px #0000002e ;
 
 }
         img.imgh4{
@@ -411,9 +418,11 @@ a.ah1{
 }
     div.article5{
     background-color: white;
+    padding: 0;
+    margin: 1rem;
     border-radius: 1rem;
     cursor: pointer;
-    box-shadow: 0 0 20px #0000002e ;
+    box-shadow: 0 0 14px #0000002e ;
 
 }
         img.imgh5{
@@ -422,9 +431,11 @@ a.ah1{
 }
     div.article6{
     background-color: white;
+    padding: 0;
+    margin: 1rem;
     border-radius: 1rem;
     cursor: pointer;
-    box-shadow: 0 0 20px #0000002e ;
+    box-shadow: 0 0 14px #0000002e ;
 
 }
         img.imgh6{
