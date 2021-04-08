@@ -187,7 +187,7 @@ width: auto;
                             padding-left: 0.5rem;
                             font-weight: bold;    
 }
-/*FAMILIAL*/
+                             /*FAMILIAL*/
 
 div.filtrefamilles{
 display: flex;
@@ -230,7 +230,7 @@ height: 3rem;
                 font-weight: bold;    
 }  
 
-/*ROMANTIQUE*/
+                               /*ROMANTIQUE*/
 
     div.filtreromantique{
     display: flex;
@@ -272,7 +272,7 @@ height: 3rem;
                     padding-left: 0.5rem;
                     font-weight: bold;    
     }  
-/*Animeaux*/
+                            /*Animeaux*/
 div.filtreanimaux{
     display: flex;
     align-items: center;
@@ -313,47 +313,129 @@ div.filtreanimaux{
                     padding-left: 0.5rem;
                     font-weight: bold;    
     }  
-/*Infos Resultat*/
+                    /*Infos Resultat*/
+                    
+                    
 div.infos{
-    display: flex;
-    align-items: center;
-    height: 5rem;
+display: flex;
+align-items: center;
+height: 5rem;
 }
-div.infoicon{
+    div.infoicon{
     display: flex;
     margin-right: 0.75rem;
     border-radius: 100%;
     border: 1px solid #d9d9d9;
     height: 1.8rem;
 }
-i.fa-info{
-    display: flex;
-    align-items: center;
-    margin-left: 1rem;
-    padding-right: 1rem;
-    color: #0065FC;
+        i.fa-info{
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+        padding-right: 1rem;
+        color: #0065FC;
 }
      
-
-
-
                     /*SECTION HEBERGEMENT*/
 
 section.hebergement{
-   
+display: grid;
+column-gap: 2rem;
+grid-template-columns:6fr 3fr;
+           
+}
+    header.headermarseille{
+    display: grid;
+    grid-column: 1 /-1;
+
+} 
+        div.divhebergement{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0fr 2fr 2fr ;
+        column-gap: 2rem;
+        row-gap: 2rem;
+        padding: 1.5rem;
+        border-radius: 1.5rem ;
+        border: 2px white solid;
+        background-color: #F2F2F2;
+}
+a.ah1{
+    text-decoration: none;
+    color: black;
+}
+    div.article1{
+    background-color: white;
+    padding: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px #0000002e ;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+        img.imgh1{
+        border-radius: 1rem 1rem 0 0;
+        height: 7rem;
+        
+}
+    div.article2{
+    background-color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 20px #0000002e ;  
+}
+        img.imgh2{
+        border-radius: 1rem 1rem 0 0;
+        height: 7rem;
+}
+    div.article3{
+    background-color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 20px #0000002e ;
+}
+        img.imgh3{
+        border-radius: 1rem 1rem 0 0;
+        height: 7rem;
+}
+    div.article4{
+    background-color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 20px #0000002e ;
+
+}
+        img.imgh4{
+        border-radius: 1rem 1rem 0 0;
+        height: 7rem;
+}
+    div.article5{
+    background-color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 20px #0000002e ;
+
+}
+        img.imgh5{
+        border-radius: 1rem 1rem 0 0;
+        height: 7rem;
+}
+    div.article6{
+    background-color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 20px #0000002e ;
+
+}
+        img.imgh6{
+        border-radius: 1rem 1rem 0 0;
+        height: 7rem;
+}
+aside.populaire{
+    background-color: #F2F2F2;
+    border-radius: 1.5rem;
     
 }
-    div.divhebergement{
-        display: flex;
-        height: 36.5rem;
-        width: 56rem;
-        
-    background-color: #F2F2F2;
-    border-radius: 1.5rem ;
-    }
-    h1.hmarseille{
-        padding-left: 2.5rem;
-        padding-top: 1rem;
-        color: black;
-    }
-    
+h1.h1populaire{
+    margin: 2rem;
+}
