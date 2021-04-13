@@ -155,9 +155,9 @@ height: 3rem;
                         
 } 
 div.filtreco:hover{
--webkit-transform: scale(1.01);
--ms-transform: scale(1.01);
-transform: scale(1.01);
+-webkit-transform: scale(1.03);
+-ms-transform: scale(1.03);
+transform: scale(1.03);
 }
                     
 div.filtreicon1{
@@ -174,6 +174,7 @@ width: 3.5rem;
     i.fa-money-bill-wave{
     display: flex;                                       
     align-items: center;
+    margin-top: 1.2rem;
     margin-left: 1rem;
     padding-right: 1rem;
     color: blue;   
@@ -199,9 +200,9 @@ transition-duration: 0.1s;
 height: 3rem;
 }
     div.filtrefamilles:hover{
-    -webkit-transform: scale(1.01);
-    -ms-transform: scale(1.01);
-    transform: scale(1.01);
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
 }
     div.filtreicon2{
     display: flex;
@@ -216,6 +217,7 @@ height: 3rem;
         i.fa-child{
         display: flex;
         align-items: center;
+        margin-top: 1.2rem;
         margin-left: 1.3rem;
         padding-right: 1rem;
         color: blue; 
@@ -242,9 +244,9 @@ transition-duration: 0.1s;
 height: 3rem;
 }
     div.filtreromantique:hover{
-    -webkit-transform: scale(1.01);
-    -ms-transform: scale(1.01);
-    transform: scale(1.01);
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
 }
     div.filtreicon3{
     display: flex;
@@ -259,7 +261,8 @@ height: 3rem;
         i.fa-heart{
         display: flex;
         align-items: center;
-        margin-left: 1.3rem;
+        margin-top: 1.2rem;
+        margin-left: 1.2rem;
         padding-right: 1rem;
         color: blue; 
 }
@@ -286,9 +289,9 @@ transition-duration: 0.1s;
 height: 3rem;
 }
     div.filtreanimaux:hover{
-    -webkit-transform: scale(1.01);
-    -ms-transform: scale(1.01);
-    transform: scale(1.01);
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
 }
     div.filtreicon4{
     display: flex;
@@ -303,7 +306,8 @@ height: 3rem;
         i.fa-dog{
         display: flex;
         align-items: center;
-        margin-left: 1.3rem;
+        margin-top: 1rem;
+        margin-left: 1.1rem;
         padding-right: 1rem;
         color: blue; 
 }
@@ -664,7 +668,7 @@ transition-duration: 0.1s;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
 
 }
 
@@ -674,44 +678,44 @@ transition-duration: 0.1s;
 /*SideArticle1*/
 
 .sidearticle1{
-    display: flex;
-    height: 8.4rem;
-     width: 23rem;
-    margin: 2rem;
-    background-color: white;
-    padding: 0.2rem 0.2em 0rem 0.2rem;
-    border: 2px solid white;
-    border-radius: 1rem;
-    transition-duration: 0.1s;
+display: flex;
+height: 8.4rem;
+width: 23rem;
+margin: 2rem;
+background-color: white;
+padding: 0.2rem 0.2em 0rem 0.2rem;
+border: 2px solid white;
+border-radius: 1rem;
+transition-duration: 0.1s;
 }
     
-        .imgh7{
-        display: flex ;
-        height: 130px;
-        width: 140px;
-        object-fit: cover;
-        border-radius: 1rem 0 0 1rem;
+    .imgh7{
+    display: flex ;
+    height: 130px;
+    width: 140px;
+    object-fit: cover;
+    border-radius: 1rem 0 0 1rem;
         
 }
-            .contenantarticle7{
-            display: flex;
-            flex-direction: column;
-            margin: -1rem 0 0 1rem;
+        .contenantarticle7{
+        display: flex;
+        flex-direction: column;
+        margin: -1rem 0 0 1rem;
                         
 }
-                .ph7{
-                margin-top: -0.5rem;
+            .ph7{
+            margin-top: -0.5rem;
 }                
-                    .starsh7{
-                    display: flex;
-                    position: relative;
-                    top: 30px;
+                .starsh7{
+                display: flex;
+                position: relative;
+                top: 30px;
                     
 }
-                        .sidearticle1:hover{
-                        -webkit-transform: scale(1.03);
-                        -ms-transform: scale(1.03);
-                        transform: scale(1.03);
+                    .sidearticle1:hover{
+                    -webkit-transform: scale(1.03);
+                    -ms-transform: scale(1.03);
+                    transform: scale(1.03);
 }
 
 /*SideArticle2*/
@@ -762,7 +766,7 @@ transition-duration: 0.1s;
 .sidearticle3{
 display: flex;
 height: 8.4rem;
- width: 23rem;
+width: 23rem;
 margin: 2rem;
 background-color: white;
 padding: 0.2rem 0.2em 0rem 0.2rem;
@@ -806,6 +810,9 @@ transition-duration: 0.1s;
 ._activites{
 display: flex;
 border-radius: 1rem;
+}
+.acth2{
+    margin-top: 2rem;
 }
                       
                 /*Contenant1*/
@@ -1013,36 +1020,48 @@ transition-duration: 0.1s;
 
 ._footer{
 display: flex;
-justify-content: space-between;
+margin-top: 2rem;
+padding: 2rem 2rem 3rem 2rem;
+justify-content: space-around;
+align-items: center;
 
 }
 
 .propos{
 display: flex;
-padding: 2rem 2rem;
-width: 30%;
+
 flex-direction: column;
 justify-content: space-between;
 }
 
 .nosheberg{
 display: flex;
-padding: 2rem 2rem;
-width: 30%;
+
 flex-direction: column;
 justify-content: space-between;
 }
 
 .assistance{
 display: flex;
-padding: 1rem 2rem;
-width: 30%;
+
 flex-direction: column;
-justify-content: space-between;
+
 }
 
 
 .nocolors{
     text-decoration: none;
     color: black;
+}
+
+.nocolors2{
+    text-decoration: none;
+    color: black;
+    font-weight: 200;
+    margin: 0.5rem 0;
+}
+.nocolors2:hover{
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
 }
