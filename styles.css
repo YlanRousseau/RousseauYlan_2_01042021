@@ -8,50 +8,55 @@ li, a{
     font-weight: 500;
     text-decoration: none;
 }
-header.header{  
+.header{  
     display: flex;
     justify-content: space-between;
-    
     padding: 0 13.5%;
 }   
-nav.headernav{
-        list-style: none;        
+.headerNav{
+    display: flex;
+    list-style: none;        
 }
 ul{
     margin: 0 -3px;
     padding: 0 -3px ;
 }
-nav.headernav li {
+.headerNav li {
 display: inline-block;
 justify-content: top;
 padding: 0 ;
 margin: 0;
 
 }
-    img.headerimg{
-    display: flex;
-    justify-content: center;
-    margin-left: 0;
-    padding-top: 0.5em;
-    height: 3em;
+.LogoReservia{
+display: flex;
+justify-content: center;
+margin-top: 1rem;
+height: 3em;
 }
-        a.nav1{
-        padding: 1.9em;
-        color: #0065FC;
+    .nav1{
+    padding: 1.9em;   
+    color: black;
+    transition-duration: 0.2s;
+    border-top: 3px transparent solid;
+}
+        .nav1:hover {
         border-top: 3px solid #0065FC;
+        color: #0065FC;
+        
+}
+    .nav2{
+    padding: 1.9em ;
+    color: black;
+    transition-duration: 0.2s;
+    border-top: 3px transparent solid; 
+}
+        .nav2:hover {
+        border-top: 3px solid #0065FC;
+        color: #0065FC;
+}
 
-}
-        a.nav2{
-        padding: 1.9em ;
-        color: black;
-        transition-duration: 0.2s;
-        border-top: 3px transparent solid; 
-}
-            a.nav2:hover {
-            border-top: 3px solid #0065FC;
-}
-
-        a.nav3{
+        .nav3{
         display: flex;
         padding: 1.9em;
         color: #0065FC;
@@ -66,7 +71,8 @@ margin: 0;
     box-sizing: border-box;
 }
                 /*FIN NAVHEADER*/
-h1.titrerecherche{
+
+.TitreRecherche{
 display: block;
 font-size: 2em;
 margin-bottom: 0.5rem;
@@ -76,12 +82,12 @@ font-weight: 600;
     display: block;
     font-weight: lighter;    
 }
-form.searchform{
+.SearchForm{
 display: inline-flex;
 max-width: 100%;
 overflow: auto;
 }
-    span.searchspanicon{
+    .SearchSpanIcon{
     background-color: #F2F2F2;
     padding: 1rem 1.25em;
     border-radius: 1rem 0 0 1rem;
@@ -89,7 +95,7 @@ overflow: auto;
     margin-top: 1rem;
     height: 1.2rem;
 }
-input.inputsearch{
+.InputSearch{
 padding-right: 2rem;
 padding-left:1.8rem ;
 margin-top: 1rem;
@@ -104,7 +110,7 @@ font-family: "Raleway";
 font-weight: bold;
 font-size: 0.8rem;
 }
-    button.Searchbutton{
+    .Searchbutton{
     padding-right: 2rem;
     height: 3.2rem;
     margin-top: 1rem;
@@ -117,7 +123,7 @@ font-size: 0.8rem;
     color: #ffffff;
     cursor: pointer;
 }
-        span.spantext{
+        .SpanText{
         padding-left: 1.2rem;
         font-size: medium;
         color: white;
@@ -127,21 +133,21 @@ font-size: 0.8rem;
                     
 /*Filtre de recherche */
                     
-div.SearchFiltres{
+.SearchFiltres{
 display: flex;
 margin-top: 0.75rem;
 height: auto;
 width: auto;
                       
 }
-h2.h2filtres{
+.TitleFiltres{
 display: flex;
 margin: 1rem 2rem 2rem 0rem;
 padding-top: 1.5rem;
 }
                            /*ECONOMIQUE*/
                     
-div.filtreco{
+.FiltreEco{
 display: flex;
 align-items: center;
 margin-left: 1rem;
@@ -154,24 +160,23 @@ transition-duration: 0.1s;
 height: 3rem;
                         
 } 
-div.filtreco:hover{
+.FiltreEco:hover{
 -webkit-transform: scale(1.03);
 -ms-transform: scale(1.03);
 transform: scale(1.03);
 }
                     
-div.filtreicon1{
+.FiltreIcon1{
 display: flex;
 margin-right: 0.5rem;
 margin-top: 0.2rem;
 border-radius: 100% ; 
 background-color: #c5dcff;
-border: rgb(255, 255, 255) 1px solid;
 height: 3.5rem;
 width: 3.5rem;    
 }
                                             
-    i.fa-money-bill-wave{
+    .fa-money-bill-wave{
     display: flex;                                       
     align-items: center;
     margin-top: 1.2rem;
@@ -179,7 +184,7 @@ width: 3.5rem;
     padding-right: 1rem;
     color: blue;   
 }
-        span.spaneco{
+        .SpanEco{
         display: flex;
         padding-right: 1rem;
         padding-left: 0.5rem;
@@ -187,7 +192,7 @@ width: 3.5rem;
 }
                      /*FAMILIAL*/
                     
-div.filtrefamilles{
+.FiltreFamilles{
 display: flex;
 align-items: center;
 margin-left: 1.5rem;
@@ -199,18 +204,17 @@ cursor: pointer;
 transition-duration: 0.1s;
 height: 3rem;
 }
-    div.filtrefamilles:hover{
+    .FiltreFamilles:hover{
     -webkit-transform: scale(1.03);
     -ms-transform: scale(1.03);
     transform: scale(1.03);
 }
-    div.filtreicon2{
+    .FiltreIcon2{
     display: flex;
     margin-right: 0.5rem;
     margin-top: 0.2rem;
     border-radius: 100% ; 
     background-color: #c5dcff;
-    border: rgb(255, 255, 255) 1px solid;
     height: 3.5rem;
     width: 3.5rem;
 }    
@@ -222,7 +226,7 @@ height: 3rem;
         padding-right: 1rem;
         color: blue; 
 }
-            span.spanfamilles{
+            .SpanFamilles{
             display: flex;
             padding-right: 1rem;
             padding-left: 0.5rem;
@@ -231,7 +235,7 @@ height: 3rem;
                     
                     /*ROMANTIQUE*/
                     
-div.filtreromantique{
+.FiltreRomantique{
 display: flex;
 align-items: center;
 margin-left: 1.5rem;
@@ -243,18 +247,17 @@ cursor: pointer;
 transition-duration: 0.1s;
 height: 3rem;
 }
-    div.filtreromantique:hover{
+    .FiltreRomantique:hover{
     -webkit-transform: scale(1.03);
     -ms-transform: scale(1.03);
     transform: scale(1.03);
 }
-    div.filtreicon3{
+    .FiltreIcon3{
     display: flex;
     margin-right: 0.5rem;
     margin-top: 0.2rem;
     border-radius: 100% ; 
     background-color: #c5dcff;
-    border: rgb(255, 255, 255) 1px solid;
     height: 3.5rem;
     width: 3.5rem;
 }    
@@ -266,7 +269,7 @@ height: 3rem;
         padding-right: 1rem;
         color: blue; 
 }
-            span.spanromantique{
+            .SpanRomantique{
             display: flex;
             padding-right: 1rem;
             padding-left: 0.5rem;
@@ -276,7 +279,7 @@ height: 3rem;
 
 
                     /*Animeaux*/
-div.filtreanimaux{
+.FiltreAnimaux{
 display: flex;
 align-items: center;
 margin-left: 1.5rem;
@@ -288,18 +291,17 @@ cursor: pointer;
 transition-duration: 0.1s;
 height: 3rem;
 }
-    div.filtreanimaux:hover{
+    .FiltreAnimaux:hover{
     -webkit-transform: scale(1.03);
     -ms-transform: scale(1.03);
     transform: scale(1.03);
 }
-    div.filtreicon4{
+    .FiltreIcon4{
     display: flex;
     margin-right: 0.5rem;
     margin-top: 0.2rem;
     border-radius: 100% ; 
     background-color: #c5dcff;
-    border: rgb(255, 255, 255) 1px solid;
     height: 3.5rem;
     width: 3.5rem;
 }    
@@ -311,7 +313,7 @@ height: 3rem;
         padding-right: 1rem;
         color: blue; 
 }
-            span.spananimaux{
+            .SpanAnimaux{
             display: flex;
             padding-right: 1rem;
             padding-left: 0.5rem;
@@ -320,24 +322,20 @@ height: 3rem;
                    /*Infos Resultat*/
                                         
                                         
-div.infos{
+.InfosResult{
 display: flex;
 align-items: center;
 height: 5rem;
 }
-    div.infoicon{
-    display: flex;
-    margin-right: 0.75rem;
-    border-radius: 100%;
-    border: 1px solid #d9d9d9;
-    height: 1.8rem;
-}
-i.fa-info{
+
+.fa-info{
 display: flex;
 align-items: center;
-margin-left: 1rem;
-padding-right: 1rem;
+margin-right: 1rem;
+padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+border-radius: 3rem;
 color: #0065FC;
+border: #d9d9d9 2px solid;
 }
 
 
@@ -346,21 +344,21 @@ color: #0065FC;
                     /*SECTION HEBERGEMENT*/                            
                    
 
-.sechebergement{
+.SecHebergement{
 display: grid;
 column-gap: 2rem;
 grid-template-columns:6fr 3fr;
 }
-    .h1marseille{
+    .Titlemarseille{
     margin: 2rem 0 0 2rem;
 }
-        .hebergementmarseille{
+        .HebergementMarseille{
         display: block;
         background-color: #F2F2F2;
         border-radius: 1.5rem;
     
 }                            
-            .divhebergement{
+            .ContenantHebergement{
             display: flex;
             justify-content: space-around;
             
@@ -368,17 +366,16 @@ grid-template-columns:6fr 3fr;
 
 /*ARTICLE1*/
 
-.article1{    
+.Article1{    
 width: 33.3333%;
 background-color: white;
 box-shadow: 0 0 14px #0000002e ;  
 margin: 2rem 1rem;
 padding: 0.3rem 0.3rem 0 0.3rem;
 border-radius: 1rem;
-cursor: pointer;
 transition-duration: 0.1s;
 }
-    .imgh1{
+    .ImgArticle1{
     height: 7rem;
     object-fit:cover;
     max-width: 100%;
@@ -386,7 +383,7 @@ transition-duration: 0.1s;
     max-height: 100%;
     border-radius: 1rem 1rem 0 0;
 }
-        .contenantarticle1{
+        .ContenantArticle1{
         display: flex;
         flex-direction: column;
         margin-top: -1rem;
@@ -394,18 +391,18 @@ transition-duration: 0.1s;
         left: 15px;
     
 }           
-            .ph1{
+            .PriceArticle1{
             margin-top: -1rem;
 }         
 
-                .starsh1{
+                .StarsArticle1{
                 display: flex;          
                 margin-top: -0.5rem;
                 padding-bottom: 0.4rem;
                 position: relative;
                 left: 15px;
 }
-                    .article1:hover{
+                    .Article1:hover{
                     -webkit-transform: scale(1.03);
                     -ms-transform: scale(1.03);
                     transform: scale(1.03);
@@ -413,18 +410,17 @@ transition-duration: 0.1s;
                
 /*ARTICLE2*/
 
-.article2{
+.Article2{
 width: 33.3333%;
 background-color: white;
 box-shadow: 0 0 14px #0000002e ;  
 margin: 2rem 1rem;
 padding: 0.3rem 0.3rem 0 0.3rem;
 border-radius: 1rem;
-cursor: pointer;
 transition-duration: 0.1s;
 }
  
-    .imgh2{
+    .ImgArticle2{
     height: 7rem;
     object-fit:cover;
     max-width: 100%;
@@ -432,42 +428,41 @@ transition-duration: 0.1s;
     max-height: 100%;
     border-radius: 1rem 1rem 0 0;
 }
-        .contenantarticle2{
+        .ContenantArticle2{
         display: flex;
         flex-direction: column;
         margin-top: -1rem;
         position: relative;
         left: 15px;
 }
-            .ph2{
+            .PriceArticle2{
             margin-top: -1rem ;
 }
-                .starsh2{
+                .StarsArticle2{
                 display: flex;
                 margin-top: -0.5rem;
                 padding-bottom: 0.4rem;
                 position: relative;
                 left: 15px;
 }
-                    .article2:hover{
+                    .Article2:hover{
                     -webkit-transform: scale(1.03);
                     -ms-transform: scale(1.03);
                     transform: scale(1.03);
                     }
 
 /*ARTICLE3*/
-.article3{
+.Article3{
 width: 33.3333%;
 background-color: white;
 box-shadow: 0 0 14px #0000002e ;  
 margin: 2rem 1rem;
 padding: 0.3rem 0.3rem 0 0.3rem;
 border-radius: 1rem;
-cursor: pointer;
 transition-duration: 0.1s;
 }
  
-    .imgh3{
+    .ImgArticle3{
     height: 7rem;
     object-fit:cover;
     max-width: 100%;
@@ -475,24 +470,24 @@ transition-duration: 0.1s;
     max-height: 100%;
     border-radius: 1rem 1rem 0 0;
 }
-        .contenantarticle3{
+        .ContenantArticle3{
         display: flex;
         flex-direction: column;
         margin-top: -1rem;
         position: relative;
         left: 15px;
 }
-            .ph3{
+            .PriceArticle3{
             margin-top: -1rem ;
 }
-                .starsh3{
+                .StarsArticle3{
                 display: flex;
                 margin-top: -0.5rem;
                 padding-bottom: 0.4rem;
                 position: relative;
                 left: 15px;
 }
-                    .article3:hover{
+                    .Article3:hover{
                     -webkit-transform: scale(1.03);
                     -ms-transform: scale(1.03);
                     transform: scale(1.03);
@@ -506,18 +501,17 @@ transition-duration: 0.1s;
 }
 /*ARTICLE4*/
 
-.article4{
+.Article4{
 width: 33.3333%;
 background-color: white;
 box-shadow: 0 0 14px #0000002e ;  
 margin: 2rem 1rem;
 padding: 0.3rem 0.3rem 0 0.3rem;
 border-radius: 1rem;
-cursor: pointer;
 transition-duration: 0.1s;
 }
      
-    .imgh4{
+    .ImgArticle4{
     height: 7rem;
     object-fit:cover;
     max-width: 100%;
@@ -525,24 +519,24 @@ transition-duration: 0.1s;
     max-height: 100%;
     border-radius: 1rem 1rem 0 0;
 }
-        .contenantarticle4{
+        .ContenantArticle4{
         display: flex;
         flex-direction: column;
         margin-top: -1rem;
         position: relative;
         left: 15px;
 }
-            .ph4{
+            .PriceArticle4{
             margin-top: -1rem ;
 }
-                .starsh4{
+                .StarsArticle4{
                 display: flex;
                 margin-top: -0.5rem;
                 padding-bottom: 0.4rem;
                 position: relative;
                 left: 15px;
 }
-                    .article4:hover{
+                    .Article4:hover{
                     -webkit-transform: scale(1.03);
                     -ms-transform: scale(1.03);
                     transform: scale(1.03);
@@ -550,18 +544,17 @@ transition-duration: 0.1s;
     
 
 /*ARTICLE5*/
-.article5{
+.Article5{
 width: 33.3333%;
 background-color: white;
 box-shadow: 0 0 14px #0000002e ;  
 margin: 2rem 1rem;
 padding: 0.3rem 0.3rem 0 0.3rem;
 border-radius: 1rem;
-cursor: pointer;
 transition-duration: 0.1s;
 }
      
-    .imgh5{
+    .ImgArticle5{
     height: 7rem;
     object-fit:cover;
     max-width: 100%;
@@ -569,24 +562,24 @@ transition-duration: 0.1s;
     max-height: 100%;
     border-radius: 1rem 1rem 0 0;
 }
-        .contenantarticle5{
+        .ContenantArticle5{
         display: flex;
         flex-direction: column;
         margin-top: -1rem;
         position: relative;
         left: 15px;
 }
-            .ph5{
+            .PriceArticle5{
             margin-top: -1rem ;
 }
-                .starsh5{
+                .StarsArticle5{
                 display: flex;
                 margin-top: -0.5rem;
                 padding-bottom: 0.4rem;
                 position: relative;
                 left: 15px;
 }
-                    .article5:hover{
+                    .Article5:hover{
                     -webkit-transform: scale(1.03);
                     -ms-transform: scale(1.03);
                      transform: scale(1.03);
@@ -596,18 +589,17 @@ transition-duration: 0.1s;
 
 /*ARTICLE6*/
 
-.article6{
+.Article6{
 width: 33.3333%;
 background-color: white;
 box-shadow: 0 0 14px #0000002e ;  
 margin: 2rem 1rem;
 padding: 0.3rem 0.3rem 0 0.3rem;
 border-radius: 1rem;
-cursor: pointer;
 transition-duration: 0.1s;
 }
      
-    .imgh6{
+    .ImgArticle6{
     height: 7rem;
     object-fit:cover;
     max-width: 100%;
@@ -615,24 +607,24 @@ transition-duration: 0.1s;
     max-height: 100%;
     border-radius: 1rem 1rem 0 0;
 }
-        .contenantarticle6{
+        .ContenantArticle6{
         display: flex;
         flex-direction: column;
         margin-top: -1rem;
         position: relative;
         left: 15px;
 }
-            .ph6{
+            .PriceArticle6{
             margin-top: -1rem ;
 }
-                .starsh6{
+                .StarsArticle6{
                 display: flex;
                 margin-top: -0.5rem;
                 padding-bottom: 0.4rem;
                 position: relative;
                 left: 15px;
 }
-                    .article6:hover{
+                    .Article6:hover{
                     -webkit-transform: scale(1.03);
                     -ms-transform: scale(1.03);
                     transform: scale(1.03);
@@ -647,19 +639,19 @@ transition-duration: 0.1s;
     color: #d9d9d9;
 }
 
-.showmore{
+.ShowMore{
     margin-left: 2rem;
     cursor: pointer;
 }
 
 
-                /*ASIDE*/
+                            /*ASIDE*/
 
-.sidepopulaire{
+.SidePopulaire{
     background-color: #F2F2F2;
     border-radius: 1.5rem;
 }
-.titlepopulaire{
+.TitlePopulaire{
     margin: 1.5rem 0 0 2rem;
     font-size: x-large; 
 }
@@ -671,13 +663,16 @@ transition-duration: 0.1s;
 
 
 }
+.fa-chart-line{
+    margin-left: 8rem;
+}
 
 
 
 
 /*SideArticle1*/
 
-.sidearticle1{
+.SideArticle1{
 display: flex;
 height: 8.4rem;
 width: 23rem;
@@ -689,7 +684,7 @@ border-radius: 1rem;
 transition-duration: 0.1s;
 }
     
-    .imgh7{
+    .ImgArticle7{
     display: flex ;
     height: 130px;
     width: 140px;
@@ -697,13 +692,13 @@ transition-duration: 0.1s;
     border-radius: 1rem 0 0 1rem;
         
 }
-        .contenantarticle7{
+        .ContenantArticle7{
         display: flex;
         flex-direction: column;
         margin: -1rem 0 0 1rem;
                         
 }
-            .ph7{
+            .PriceArticle7{
             margin-top: -0.5rem;
 }                
                 .starsh7{
@@ -712,7 +707,7 @@ transition-duration: 0.1s;
                 top: 30px;
                     
 }
-                    .sidearticle1:hover{
+                    .SideArticle1:hover{
                     -webkit-transform: scale(1.03);
                     -ms-transform: scale(1.03);
                     transform: scale(1.03);
@@ -720,7 +715,7 @@ transition-duration: 0.1s;
 
 /*SideArticle2*/
 
-.sidearticle2{
+.SideArticle2{
 display: flex;
 height: 8.4rem;
 width: 23rem;
@@ -740,13 +735,13 @@ transition-duration: 0.1s;
     border-radius: 1rem 0 0 1rem;
                 
 }
-        .contenantarticle8{
+        .ContenantArticle8{
         display: flex;
         flex-direction: column;
         margin: -1rem 0 0 1rem;
                             
 }
-            .ph8{
+            .PriceArticle8{
             margin-top: -0.5rem;
 }                
                 .starsh8{
@@ -755,7 +750,7 @@ transition-duration: 0.1s;
                 top: 20px;
                         
 }
-                    .sidearticle2:hover{
+                    .SideArticle2:hover{
                     -webkit-transform: scale(1.03);
                     -ms-transform: scale(1.03);
                     transform: scale(1.03);
@@ -1055,7 +1050,6 @@ flex-direction: column;
 }
 
 .nocolors2{
-    text-decoration: none;
     color: black;
     font-weight: 200;
     margin: 0.5rem 0;
