@@ -15,7 +15,7 @@ a {
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 0 13.5%;
+    padding: 0 2%;
 }
 
 .headerNav {
@@ -378,17 +378,17 @@ i.fa-dog {
 /*SECTION HEBERGEMENT*/
 
 .SecHebergement {
-    display: grid;
-    column-gap: 2rem;
-    grid-template-columns: 6fr 3fr;
+    display: flex;
 }
 
 .Titlemarseille {
-    margin: 2rem 0 0 2rem;
+    margin: 1.5rem 0 0 2rem;
+    font-size: x-large;
 }
 
 .HebergementMarseille {
     display: block;
+    width: 60%;
     background-color: #F2F2F2;
     border-radius: 1.5rem;
 }
@@ -714,19 +714,18 @@ i.fa-dog {
 /*ASIDE*/
 
 .SidePopulaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #F2F2F2;
     border-radius: 1.5rem;
+    width: 33%;
+    margin-left: 2rem;
 }
 
 .TitlePopulaire {
     margin: 1.5rem 0 0 2rem;
     font-size: x-large;
-}
-
-.Popular3art {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .fa-chart-line {
@@ -868,6 +867,10 @@ i.fa-dog {
 
 
 /*SECTION ACTIVITES*/
+
+.SecActivite {
+    display: flex;
+}
 
 ._activites {
     display: flex;
