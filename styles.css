@@ -12,21 +12,11 @@ a {
     text-decoration: none;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 2%;
-}
-
 .headerNav {
     display: flex;
     list-style: none;
 }
 
-ul {
-    margin: 0 -3px;
-    padding: 0 -3px;
-}
 
 .headerNav li {
     display: inline-block;
@@ -72,13 +62,6 @@ ul {
     color: #0065FC;
     font-weight: bolder;
     border: 3px transparent solid;
-}
-
-main {
-    max-width: 1440px;
-    margin: auto;
-    padding: 0 2rem;
-    box-sizing: border-box;
 }
 
 
@@ -1099,14 +1082,6 @@ i.fa-dog {
 
 /*FOOTER*/
 
-.footer {
-    background-color: #F2F2F2;
-    width: 100%;
-    display: flex;
-    margin-top: 2rem;
-    padding: 2rem 2rem 3rem 2rem;
-}
-
 
 /*.propos{
                     display: flex;
@@ -1132,15 +1107,6 @@ i.fa-dog {
     color: black;
 }
 
-.nocolors2 {
-    color: black;
-    font-weight: 200;
-    margin: 0.5rem 0;
-}
-
-.nocolors2:hover {
-    text-decoration: underline;
-}
 
 .footer_block {
     width: 33.33333333333%;
@@ -1151,6 +1117,177 @@ i.fa-dog {
 
 
 /*TODO refaire ce qu'il y a avant*/
+
+
+
+/*HEADER*/
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 91%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+header {
+    width: 91%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div#blocLogo {
+    flex-grow: 1;
+    padding-top: 2rem;
+}
+
+nav {
+    display: flex;
+    flex-basis: 20%;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+    width: 100%;
+}
+
+nav ul li {
+    text-align: center;
+    flex-basis: 40%;
+}
+
+nav a, #lienInscription {
+    display: block;
+    color: black;
+    transition-duration: 0.2s;
+    border-top: 3px transparent solid;
+    padding-top: 2rem;
+}
+
+#lienInscription {
+    color: #0065FC;
+    font-weight: bold;
+    padding-left: 1rem;
+}
+
+
+nav a:hover {
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
+}
+
+@media screen and (max-width: 650px) {
+
+    header nav {
+        order: 2;
+        flex-basis: 100%;
+    }
+
+    nav a {
+        border-top: none;
+        border-bottom: 3px grey solid;
+
+    }
+
+    nav a:hover {
+        border-top: none;
+        border-bottom: 3px #0065FC solid;
+    }
+
+
+    header nav ul {
+        width: 100%;
+        padding: 0px;
+    }
+
+    nav ul li {
+        flex-basis: 50%;
+    }
+
+}
+
+
+/*Filtres*/
+
+.SearchFiltres {
+    display: flex;
+    margin-top: 0.75rem;
+    height: auto;
+    width: auto;
+    flex-wrap: wrap;
+}
+
+.TitleFiltres {
+    margin: 1rem 2rem 2rem 0rem;
+    padding-top: 1.5rem;
+}
+
+.FiltreTicket {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    margin-top: 1.75rem;
+    border: 2px solid #d9d9d9;
+    border-left: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    height: 3rem;
+}
+
+.FiltreTicket:hover {
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+.FiltreIcon {
+    display: flex;
+    margin-right: 0;
+    margin-top: 0;
+    border-radius: 100%;
+    background-color: #c5dcff;
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+.TicketDescription {
+    display: flex;
+    padding-right: 1rem;
+    padding-left: 0.5rem;
+    font-weight: bold;
+}
+
+i.fa-heart i.fa-dog i.fa-child .fa-money-bill-wave {
+    display: flex;
+    align-items: center;
+    margin-top: 0rem;
+    margin-left: 1.2rem;
+    padding-right: 1rem;
+    color: blue;
+}
+
+.fa-money-bill-wave {
+    margin-top: 1.2rem;
+    margin-left: 1rem;
+}
+
+i.fa-child {
+    margin-left: 1.4rem;
+}
+
+
+
 
 
 /*SECTION HEBERGEMENT*/
@@ -1223,8 +1360,8 @@ i.fa-dog {
     margin-left: 0;
 }
 
-.bloc-hebergement>img,
-.bloc-populaire>img {
+.bloc-hebergement > img,
+.bloc-populaire > img {
     height: 7rem;
     object-fit: cover;
     max-width: 100%;
@@ -1233,7 +1370,7 @@ i.fa-dog {
     border-radius: 1rem 1rem 0 0;
 }
 
-.bloc-populaire>img {
+.bloc-populaire > img {
     max-width: 35%;
     border-radius: 1rem 0 0 1rem;
     padding: 0.3rem;
@@ -1263,7 +1400,7 @@ i.fa-dog {
     margin-top: 0.3rem;
 }
 
-.bloc-hebergement>div.description {
+.bloc-hebergement > div.description {
     margin-top: 0.3rem;
 }
 
@@ -1281,9 +1418,11 @@ i.fa-dog {
         order: 2;
         margin-top: 1rem;
     }
+
     section#hebergement {
         flex-direction: column;
     }
+
     .left-side,
     .right-side {
         flex-basis: 100%;
@@ -1292,71 +1431,41 @@ i.fa-dog {
 }
 
 
-/*Filtres*/
 
-.SearchFiltres {
+
+
+
+/* FOOTER */
+footer {
+    background-color: #F2F2F2;
+    width: 100%;
     display: flex;
-    margin-top: 0.75rem;
-    height: auto;
-    width: auto;
-    flex-wrap: wrap;
+    padding: 2rem 4.5%;
+    justify-content: space-around;
 }
 
-.TitleFiltres {
-    margin: 1rem 2rem 2rem 0rem;
-    padding-top: 1.5rem;
+footer div {
+    width: 33.333333333%;
 }
 
-.FiltreTicket {
-    display: flex;
-    align-items: center;
-    margin-left: 1rem;
-    margin-top: 1.75rem;
-    border: 2px solid #d9d9d9;
-    border-left: none;
-    border-radius: 3rem;
-    cursor: pointer;
-    transition-duration: 0.1s;
-    height: 3rem;
+footer ul {
+    padding: 0;
 }
 
-.FiltreTicket:hover {
-    -webkit-transform: scale(1.03);
-    -ms-transform: scale(1.03);
-    transform: scale(1.03);
+footer ul li {
+    list-style-type: none;
+    margin-top: 0.5rem;
 }
 
-.FiltreIcon {
-    display: flex;
-    margin-right: 0;
-    margin-top: 0;
-    border-radius: 100%;
-    background-color: #c5dcff;
-    height: 3.5rem;
-    width: 3.5rem;
+footer a {
+    color: black;
+    font-weight: 200;
+    margin: 0.5rem 0;
 }
 
-.TicketDescription {
-    display: flex;
-    padding-right: 1rem;
-    padding-left: 0.5rem;
-    font-weight: bold;
+footer a:hover {
+    text-decoration: underline;
 }
 
-i.fa-heart i.fa-dog i.fa-child .fa-money-bill-wave {
-    display: flex;
-    align-items: center;
-    margin-top: 0rem;
-    margin-left: 1.2rem;
-    padding-right: 1rem;
-    color: blue;
-}
 
-.fa-money-bill-wave {
-    margin-top: 1.2rem;
-    margin-left: 1rem;
-}
 
-i.fa-child {
-    margin-left: 1.4rem;
-}
