@@ -245,7 +245,7 @@ i.fa-child {
 
 #hebergements {
     display: flex;
-    width: 100%;
+    width: 98%;
 }
 
 .left-side,
@@ -402,157 +402,103 @@ div.note {
 }
 
 
-/*Activite*/
+/*SECTION ACTIVITES*/
+
+.act-h2 {
+    margin-top: 3rem;
+    margin-left: 2rem;
+}
 
 .SecActivite {
     display: flex;
-    flex-direction: column;
-    margin: 3rem 0 3rem 0;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 4rem;
 }
 
-._activites {
+.SecActivite h3 {
+    margin-left: 2rem;
+    padding: 0.2rem;
+}
+
+.link-act,
+.link-acti,
+.link-act1,
+.link-act2,
+.link-act3,
+.link-act4 {
     display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 34.25rem;
+    box-shadow: 0 0 20px #0000002e;
     border-radius: 1rem;
-    margin: 0rem 0 2rem 0;
+    overflow: hidden;
+    transition-duration: 0.1s;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    position: relative;
+    color: black;
+    text-decoration: none;
 }
-
-
-/*Contenant1*/
 
 .act_contenant {
     display: flex;
     flex-direction: column;
-    height: max-content;
-    width: max-content;
-    background-color: white;
-    box-shadow: 0 0 20px #0000002e;
-    border-radius: 1rem;
-    transition-duration: 0.1s;
 }
 
-.pictureact1 {
-    height: 485px;
-    width: 320px;
+.picture-act {
+    height: 100%;
+    width: 100%;
     object-fit: cover;
-    border-radius: 1rem 1rem 0 0;
 }
 
-.desc-act {
-    margin-left: 1rem;
+.link-act1 {
+    height: 18rem;
 }
 
-.act_contenant:hover {
+.picture-act1 {
+    height: 79%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.link-act2 {
+    margin-top: 3.3rem;
+    height: 13rem;
+}
+
+.picture-act2 {
+    height: 68%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.link-act3 {
+    height: 13.5rem;
+}
+
+.picture-act3 {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.link-act4 {
+    height: 17.3rem;
+    margin-top: 3.5rem;
+}
+
+.picture-act4 {
+    height: 76%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.SecActivite a:hover {
     -webkit-transform: scale(1.03);
     -ms-transform: scale(1.03);
     transform: scale(1.03);
-}
-
-
-/*Contenant2*/
-
-.act_contenant2 {
-    display: flex;
-    flex-direction: column;
-}
-
-
-/*Contenu_1*/
-
-.act_contenu,
-.act_contenu1,
-.act_contenu2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: max-content;
-    width: max-content;
-    margin: 0 2rem;
-    background-color: white;
-    box-shadow: 0 0 20px #0000002e;
-    border-radius: 1rem;
-    transition-duration: 0.1s;
-}
-
-.act_contenu1,
-.act_contenu2 {
-    margin-bottom: 2rem;
-}
-
-.pictureact2 {
-    height: 230px;
-    width: 320px;
-    object-fit: cover;
-    border-radius: 1rem 1rem 0 0;
-}
-
-.act_contenu:hover {
-    -webkit-transform: scale(1.03);
-    -ms-transform: scale(1.03);
-    transform: scale(1.03);
-}
-
-
-/*Contenu_2*/
-
-.pictureact3 {
-    height: 160px;
-    width: 315px;
-    object-fit: cover;
-    border-radius: 1rem 1rem 0 0;
-}
-
-.act_contenu1:hover {
-    -webkit-transform: scale(1.03);
-    -ms-transform: scale(1.03);
-    transform: scale(1.03);
-}
-
-
-/*Contenant3*/
-
-.pictureact4 {
-    height: 485px;
-    width: 320px;
-    object-fit: cover;
-    border-radius: 1rem 1rem 0 0;
-}
-
-
-/*Contenant4*/
-
-.act_contenant4 {
-    display: flex;
-    flex-direction: column;
-}
-
-
-/*Contenu_3*/
-
-.pictureact5 {
-    height: 170px;
-    width: 320px;
-    object-fit: cover;
-    border-radius: 1rem 1rem 0 0;
-}
-
-
-/*Contenu_4*/
-
-.pictureact6 {
-    height: 220px;
-    width: 320px;
-    object-fit: cover;
-    border-radius: 1rem 1rem 0 0;
-}
-
-.act_contenu2:hover {
-    -webkit-transform: scale(1.03);
-    -ms-transform: scale(1.03);
-    transform: scale(1.03);
-}
-
-.nocolors {
-    color: black;
 }
 
 
