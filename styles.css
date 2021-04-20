@@ -76,28 +76,6 @@ nav a:hover {
     color: #0065FC;
 }
 
-@media screen and (max-width: 650px) {
-    header nav {
-        order: 2;
-        flex-basis: 100%;
-    }
-    nav a {
-        border-top: none;
-        border-bottom: 3px grey solid;
-    }
-    nav a:hover {
-        border-top: none;
-        border-bottom: 3px #0065FC solid;
-    }
-    header nav ul {
-        width: 100%;
-        padding: 0px;
-    }
-    nav ul li {
-        flex-basis: 50%;
-    }
-}
-
 
 /*Zone de Recherche*/
 
@@ -133,6 +111,7 @@ p {
     margin-top: 1rem;
     text-align: left;
     border: #F2F2F2 1px solid;
+    font-weight: bold;
 }
 
 .Searchbutton {
@@ -269,8 +248,6 @@ i.fa-child {
 }
 
 #hebergements h2 {
-    margin-left: 0;
-    margin-bottom: 0;
     font-size: x-large;
 }
 
@@ -385,22 +362,6 @@ div.note {
     color: #d9d9d9;
 }
 
-@media (max-width: 750px) {
-    .left-side {
-        margin: 0;
-        order: 2;
-        margin-top: 1rem;
-    }
-    section#hebergement {
-        flex-direction: column;
-    }
-    .left-side,
-    .right-side {
-        flex-basis: 100%;
-        border-radius: 0;
-    }
-}
-
 
 /*SECTION ACTIVITES*/
 
@@ -421,7 +382,7 @@ div.note {
     padding: 0.2rem;
 }
 
-.link-act,
+.link-act0,
 .link-acti,
 .link-act1,
 .link-act2,
@@ -435,16 +396,20 @@ div.note {
     border-radius: 1rem;
     overflow: hidden;
     transition-duration: 0.1s;
-    margin-left: 2rem;
     margin-top: 1.5rem;
     position: relative;
     color: black;
     text-decoration: none;
 }
 
+.link-acti {
+    margin-left: 2.7rem;
+}
+
 .act_contenant {
     display: flex;
     flex-direction: column;
+    margin-left: 2.7rem;
 }
 
 .picture-act {
@@ -506,20 +471,23 @@ div.note {
 
 footer {
     background-color: #F2F2F2;
-    width: 82%;
     display: flex;
-    padding: 2rem 9%;
+    padding: 2rem;
 }
 
 footer div {
-    width: 33.333333333%;
+    width: 30.333333333%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer ul {
     padding: 0;
+    margin-top: 0;
 }
 
-footer ul li {
+footer li {
     list-style-type: none;
     margin-top: 0.7rem;
 }
@@ -532,4 +500,131 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+.aPropos {
+    margin-right: 9rem;
+}
+
+.assist {
+    margin-right: 1rem;
+}
+
+
+/*Media Querries*/
+
+@media screen and (max-width: 650px) {
+    div#blocLogo {
+        padding-top: 1.3rem;
+        margin-left: 0.5rem;
+    }
+    #lienInscription {
+        margin-right: 0.5rem;
+    }
+    header nav {
+        order: 2;
+        flex-basis: 100%;
+    }
+    nav a {
+        border-top: none;
+        border-bottom: 3px #F2F2F2 solid;
+        padding-bottom: 0.8rem;
+    }
+    nav a:hover {
+        border-top: none;
+        border-bottom: 3px #0065FC solid;
+    }
+    header nav ul {
+        width: 100%;
+        padding: 0px;
+    }
+    nav ul li {
+        flex-basis: 50%;
+    }
+    .SearchSection>h1 {
+        font-size: 1.2rem;
+    }
+    .TitreRecherche,
+    .SearchForm,
+    .descOffer,
+    .SearchFiltres,
+    .InfosResult {
+        margin-left: 0.5rem;
+    }
+    .SearchFiltres {
+        display: block;
+        width: 14rem;
+    }
+    .FiltreTicket {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    .InfosResult {
+        margin-top: 1.5rem;
+    }
+    #hebergements {
+        width: 100%;
+        flex-direction: column;
+    }
+    .left-side {
+        background-color: white;
+    }
+    .bloc-3-hebergements {
+        display: block;
+    }
+    .bloc-hebergement {
+        width: 100%;
+        margin: 1rem 0;
+    }
+    .link-act0,
+    .link-acti,
+    .link-act1,
+    .link-act2,
+    .link-act3,
+    .link-act4 {
+        height: 13rem;
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .picture-act,
+    .picture-act1,
+    .picture-act2,
+    .picture-act3,
+    .picture-act4 {
+        height: 141px;
+    }
+    .act_contenant,
+    .link-act0,
+    .link-acti {
+        margin: 0 1.5rem;
+    }
+    .link-acti {
+        margin-top: 2rem;
+    }
+    footer {
+        display: block;
+        padding: 1.5rem;
+    }
+    footer div {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+    }
+}
+
+@media (max-width: 750px) {
+    .left-side {
+        margin: 0;
+        order: 2;
+        margin-top: 1rem;
+    }
+    section#hebergement {
+        flex-direction: column;
+    }
+    .left-side,
+    .right-side {
+        flex-basis: 100%;
+        border-radius: 0;
+    }
 }
