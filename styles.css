@@ -643,10 +643,9 @@ footer a:hover {
     .link-act0 {
         margin-left: 2.5rem;
     }
-}
-
-.left-side,
-.right-side {
-    flex-basis: 100%;
-    border-radius: 0;
+    .left-side,
+    .right-side {
+        flex-basis: 100%;
+        border-radius: 0;
+    }
 }
