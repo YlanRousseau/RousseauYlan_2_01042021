@@ -613,18 +613,40 @@ footer a:hover {
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 770px) {
+    div#blocLogo {
+        padding-top: 1.3rem;
+        margin-left: 0.5rem;
+    }
     .left-side {
         margin: 0;
         order: 2;
         margin-top: 1rem;
+        background-color: white;
     }
-    section#hebergement {
-        flex-direction: column;
+    #hebergements {
+        display: flex;
+        width: 100%;
+        flex-flow: wrap;
     }
-    .left-side,
-    .right-side {
-        flex-basis: 100%;
-        border-radius: 0;
+    li,
+    a {
+        margin-right: 1rem;
     }
+    .TitreRecherche,
+    .SearchForm,
+    .descOffer,
+    .SearchFiltres,
+    .InfosResult {
+        margin-left: 0.5rem;
+    }
+    .link-act0 {
+        margin-left: 2.5rem;
+    }
+}
+
+.left-side,
+.right-side {
+    flex-basis: 100%;
+    border-radius: 0;
 }
