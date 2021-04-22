@@ -93,8 +93,8 @@ p {
 
 .SearchForm {
     display: inline-flex;
-    max-width: 100%;
-    overflow: auto;
+    height: 3.2rem;
+    margin-top: 1rem;
 }
 
 .SearchSpanIcon {
@@ -102,13 +102,11 @@ p {
     padding: 1rem 1.25em;
     border-radius: 1rem 0 0 1rem;
     text-align: center;
-    margin-top: 1rem;
     height: 1.2rem;
 }
 
 .InputSearch {
     padding-left: 1.5rem;
-    margin-top: 1rem;
     text-align: left;
     border: #F2F2F2 1px solid;
     font-weight: bold;
@@ -117,7 +115,6 @@ p {
 .Searchbutton,
 .searchButtonIcon {
     padding-right: 2rem;
-    margin-top: 1rem;
     background-color: #0065FC;
     border-radius: 0 1rem 1rem 0;
     border: #F2F2F2 1px solid;
@@ -358,6 +355,12 @@ div.note {
 #showMore {
     width: 6rem;
     color: black;
+}
+
+#showMore:hover {
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
 }
 
 .bloc-populaire div.remplissage {
