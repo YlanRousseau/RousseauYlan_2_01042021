@@ -355,9 +355,9 @@ div.note {
     margin-top: 0.5rem;
 }
 
-.btn-plus {
-    margin-left: 1rem;
-    cursor: pointer;
+#showMore {
+    width: 6rem;
+    color: black;
 }
 
 .bloc-populaire div.remplissage {
@@ -543,12 +543,6 @@ footer a:hover {
     .link-acti {
         margin-left: 8.5rem;
     }
-    .Searchbutton {
-        display: none;
-    }
-    .searchButtonIcon {
-        display: block;
-    }
     .SecActivite {
         flex-wrap: wrap;
     }
@@ -572,6 +566,12 @@ footer a:hover {
     div#blocLogo {
         padding-top: 1.3rem;
         margin-left: 0.5rem;
+    }
+    .Searchbutton {
+        display: none;
+    }
+    .searchButtonIcon {
+        display: block;
     }
     .left-side {
         margin: 0;
