@@ -394,14 +394,20 @@ div.note {
 /*SECTION ACTIVITES*/
 
 .act-h2 {
+    display: flex;
     margin-top: 3rem;
     margin-left: 2rem;
 }
 
 .SecActivite {
     display: flex;
+    flex-direction: column;
     width: 100%;
     margin-bottom: 4rem;
+}
+
+#contenantallAct {
+    display: flex;
 }
 
 .SecActivite h3 {
@@ -541,13 +547,10 @@ footer a:hover {
 /*Media Querries*/
 
 @media (max-width:1150px) {
-    .link-act0,
-    .act_contenant,
-    .link-acti {
-        margin-left: 8.5rem;
-    }
-    .SecActivite {
+    #contenantallAct {
+        display: flex;
         flex-wrap: wrap;
+        margin-left: 20%;
     }
     div#blocLogo {
         padding-top: 1.3rem;
@@ -559,6 +562,9 @@ footer a:hover {
     .SearchFiltres,
     .InfosResult {
         margin-left: 0.5rem;
+    }
+    .link-acti {
+        margin-left: 0;
     }
     #lienInscription {
         margin-right: 0.5rem;
@@ -598,15 +604,23 @@ footer a:hover {
     .InfosResult {
         margin-left: 0.5rem;
     }
-    .link-act0,
-    .act_contenant,
-    .link-acti {
-        margin-left: 2.5rem;
+    #contenantallAct {
+        margin-left: 12%;
     }
     .left-side,
     .right-side {
         flex-basis: 100%;
         border-radius: 0;
+    }
+}
+
+@media screen and (max-width:805px) {
+    #contenantallAct {
+        margin-left: 20%;
+    }
+    .link-act0,
+    .link-acti {
+        margin-left: 2.5rem;
     }
 }
 
@@ -704,6 +718,9 @@ footer a:hover {
     .link-act0,
     .link-acti {
         margin: 0 1.5rem;
+    }
+    #contenantallAct {
+        margin-left: 0;
     }
     .link-act0 {
         margin-left: 1.5rem;
