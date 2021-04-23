@@ -641,6 +641,7 @@ footer a:hover {
         border-top: none;
         border-bottom: 3px #F2F2F2 solid;
         padding-bottom: 0.8rem;
+        margin-right: 0;
     }
     nav a:hover {
         border-top: none;
