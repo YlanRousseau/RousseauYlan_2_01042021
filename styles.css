@@ -551,7 +551,7 @@ footer a:hover {
     #contenantallAct {
         display: flex;
         flex-wrap: wrap;
-        margin-left: 20%;
+        margin-left: 16%;
     }
     div#blocLogo {
         padding-top: 1.3rem;
@@ -617,7 +617,7 @@ footer a:hover {
 
 @media screen and (max-width:805px) {
     #contenantallAct {
-        margin-left: 20%;
+        margin-left: 0;
     }
     .link-act0,
     .link-acti {
