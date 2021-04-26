@@ -679,11 +679,11 @@ footer a:hover {
     }
     li,
     a {
-        margin-right: 0rem;
+        margin-right: 0;
     }
     header nav ul {
         width: 100%;
-        padding: 0px;
+        padding: 0;
     }
     nav ul li {
         flex-basis: 50%;
@@ -708,7 +708,7 @@ footer a:hover {
         padding-right: 1.5rem;
     }
     .TitleFiltres {
-        margin: 0rem 2rem 1rem 0rem;
+        margin: 0 2rem 1rem 0;
         width: 9rem;
     }
     .SearchFiltres {
@@ -728,7 +728,7 @@ footer a:hover {
         padding-right: 0.1rem;
     }
     .SpanText {
-        padding-left: 0rem;
+        padding-left: 0;
     }
     #hebergements {
         width: 101%;
