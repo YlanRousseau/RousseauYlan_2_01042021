@@ -207,7 +207,7 @@ i.fa-child,
 .fa-money-bill-wave {
     display: flex;
     align-items: center;
-    margin-top: 0rem;
+    margin-top: 0;
     margin-left: 1.2rem;
     padding-right: 1rem;
     color: blue;
@@ -547,6 +547,20 @@ footer a:hover {
 
 /*Media Querries*/
 
+@media (max-width:2560px) {
+    footer {
+        width: 54%;
+        margin-left: 21%;
+    }
+}
+
+@media (max-width:1680px) {
+    footer {
+        width: 96%;
+        margin-left: 0;
+    }
+}
+
 @media (max-width:1150px) {
     #contenantallAct {
         display: flex;
@@ -630,14 +644,22 @@ footer a:hover {
         margin-left: 2.5rem;
     }
     .bloc-populaire {
-        margin: 1.5rem 0 1.5rem 3.5rem;
-    }
-    .bloc-populaire {
         margin: 1.5rem 0 1.5rem 4.5rem;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width:748px) {
+    .link-act0,
+    .link-acti,
+    .link-act1,
+    .link-act2,
+    .link-act3,
+    .link-act4 {
+        width: 16rem;
+    }
+}
+
+@media screen and (max-width: 621px) {
     div#blocLogo {
         padding-top: 1.3rem;
         margin-left: 0.5rem;
@@ -678,11 +700,25 @@ footer a:hover {
     .descOffer,
     .SearchFiltres,
     .InfosResult {
-        margin-left: 0.5rem;
+        margin-left: 1.5rem;
+    }
+    .SearchForm {
+        margin-left: 2rem;
+    }
+    .FiltreTicket:nth-child(3n) {
+        margin-left: 0.26rem;
+    }
+    .InputSearch {
+        padding-right: 1.5rem;
+    }
+    .TitleFiltres {
+        margin: 0rem 2rem 1rem 0rem;
+        width: 9rem;
     }
     .SearchFiltres {
-        display: block;
-        width: 14rem;
+        display: flex;
+        width: 20rem;
+        flex-wrap: wrap;
     }
     .FiltreTicket {
         margin-left: 0;
@@ -690,6 +726,7 @@ footer a:hover {
     }
     .InfosResult {
         margin-top: 1.5rem;
+        margin-bottom: 1rem;
     }
     .Searchbutton {
         padding-right: 0.1rem;
