@@ -792,3 +792,13 @@ footer a:hover {
         align-items: normal;
     }
 }
+
+@media (max-width:320px) {
+    .TitreRecherche,
+    .SearchForm,
+    .descOffer,
+    .SearchFiltres,
+    .InfosResult {
+        margin-left: 0.2rem;
+    }
+}
