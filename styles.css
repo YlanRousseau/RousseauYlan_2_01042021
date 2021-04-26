@@ -547,17 +547,13 @@ footer a:hover {
 
 /*Media Querries*/
 
-@media (max-width:2560px) {
+@media (width:2560px) {
     footer {
-        width: 54%;
-        margin-left: 21%;
+        width: 53.5%;
+        margin-left: 21.3%;
     }
-}
-
-@media (max-width:1680px) {
-    footer {
-        width: 96%;
-        margin-left: 0;
+    footer div {
+        width: 30.5%;
     }
 }
 
