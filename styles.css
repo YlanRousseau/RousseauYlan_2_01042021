@@ -123,9 +123,8 @@ p {
 }
 
 .fa-search {
-    margin-left: 0;
-    align-items: center;
     margin-left: 0.5rem;
+    align-items: center;
 }
 
 .searchButtonIcon {
@@ -206,16 +205,14 @@ i.fa-dog,
 i.fa-child,
 .fa-money-bill-wave {
     display: flex;
-    align-items: center;
-    margin-top: 0;
+    margin-top: 1.2rem;
     margin-left: 1.2rem;
     padding-right: 1rem;
     color: blue;
 }
 
 .fa-money-bill-wave {
-    margin-top: 1.2rem;
-    margin-left: 1rem;
+    margin-left: 1.1rem;
 }
 
 i.fa-child {
@@ -234,7 +231,6 @@ i.fa-child {
 
 .fa-info {
     display: flex;
-    align-items: center;
     margin-right: 1rem;
     padding: 0.5rem 0.75rem 0.5rem 0.75rem;
     border-radius: 3rem;
@@ -583,10 +579,6 @@ footer a:hover {
 }
 
 @media (max-width: 930px) {
-    div#blocLogo {
-        padding-top: 1.3rem;
-        margin-left: 0.5rem;
-    }
     .Searchbutton {
         display: none;
     }
@@ -656,10 +648,6 @@ footer a:hover {
 }
 
 @media screen and (max-width: 621px) {
-    div#blocLogo {
-        padding-top: 1.3rem;
-        margin-left: 0.5rem;
-    }
     #lienInscription {
         margin-right: 0.5rem;
     }
@@ -771,9 +759,6 @@ footer a:hover {
     .link-act0,
     .link-acti {
         margin: 0 1.5rem;
-    }
-    #contenantallAct {
-        margin-left: 0;
     }
     .link-act0 {
         margin-left: 1.5rem;
