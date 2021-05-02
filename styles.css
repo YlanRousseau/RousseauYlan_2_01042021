@@ -183,6 +183,8 @@ p {
     -webkit-transform: scale(1.03);
     -ms-transform: scale(1.03);
     transform: scale(1.03);
+    background-color: #0065FC;
+    color: white;
 }
 
 .FiltreIcon {
