@@ -33,7 +33,7 @@ div#blocLogo {
 
 li,
 a {
-    font-weight: 500;
+    font-weight: 400;
     text-decoration: none;
     list-style: none;
 }
@@ -571,6 +571,9 @@ footer a:hover {
     .SearchFiltres,
     .InfosResult {
         margin-left: 0.5rem;
+    }
+    .left-side {
+        margin-left: 2%;
     }
     .link-acti {
         margin-left: 0;
